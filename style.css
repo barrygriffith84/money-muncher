@@ -1,41 +1,65 @@
-.kid {
-    width: 25%;
-    border: 1px solid red;
+.app-container {
+    /* border: 1px solid brown; */
     position: relative;
-    /* top: 10vh; */
-    left: 40vw;
+    height: 900px;
+}
+
+.input-div {
+    /* border: 1px solid green; */
+    position: absolute;
+    left: 39.5vw;
+    top: 7vh;
+}
+
+button {
+    width: 10em;
+    height: 2em;
+}
+
+input {
+    width: 15em;
+    height: 2em;
+}
+
+.drop-container {
+    /* border: 1px solid black; */
+    width: 520px;
+    height: 612px;
+    position: absolute;
+    left: 35vw;
+    bottom: 20vh;
+}
+
+.kid {
+    /* width: 25%; */
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.mouth-div {
+    height: 150px;
+    width: 130px;
+    /* border: 1px solid black; */
+    position: absolute;
+    top: 27.5vh;
+    left: 8.5vw;
+    z-index: 2;
+}
+
+.coin-div {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-flow: column wrap;
+    width: 3vw;
+    position: absolute;
+    left: 31vw;
+    top: 30vh;
 }
 
 .coin {
     width: 3vw;
-    border: 1px solid green;
-}
-
-.coin-div {
-    border: 1px solid red;
-    display: flex;
-    flex-flow: column wrap;
-    position: relative;
-    top: 50vh;
-    left: 36vw;
-    width: 3vw;
-}
-
-.mouth-div {
-    height: 10vh;
-    width: 5vw;
-    border: 1px solid black;
-    position: relative;
-    bottom: 25vh;
-    left: 48.5vw;
-}
-
-.logo {
-    height: 500px;
-    width: 500px;
-    border: 1px solid blue;
-}
-
-.drop-container {
-    border: 1px solid black;
+    /* border: 1px solid green; */
 }
