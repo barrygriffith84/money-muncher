@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport content=width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Money Muncher</title>
+</head>
+
+<body>
+  <div id="coin-div" class="coin-div">
+    <img src="images/nickel.png" alt="nickel" id="nickel-5" class="coin" draggable="true" ondragstart="drag(event)">
+    <img src="images/penny.png" alt="penny" id="penny-1" class="coin" draggable="true" ondragstart="drag(event)">
+  </div>
+
+  <img src="images/kid.jpg" alt="kid" id="kid" class="kid" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <!-- <div class="mouth-div" id="mouth-div"></div> -->
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>

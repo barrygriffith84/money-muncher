@@ -1,0 +1,31 @@
+.kid {
+    width: 25%;
+    border: 1px solid red;
+    position: relative;
+    top: 10vh;
+    left: 40vw;
+}
+
+.coin {
+    width: 3vw;
+    border: 1px solid green;
+}
+
+.coin-div {
+    border: 1px solid red;
+    display: flex;
+    flex-flow: column wrap;
+    position: relative;
+    top: 40vh;
+    left: 30vw;
+    width: 3vw;
+}
+
+.mouth-div {
+    height: 10vh;
+    width: 5vw;
+    border: 1px solid black;
+    position: relative;
+    bottom: 25vh;
+    left: 48.5vw;
+}
