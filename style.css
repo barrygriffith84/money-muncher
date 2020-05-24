@@ -2,7 +2,7 @@
     width: 25%;
     border: 1px solid red;
     position: relative;
-    top: 10vh;
+    /* top: 10vh; */
     left: 40vw;
 }
 
@@ -16,8 +16,8 @@
     display: flex;
     flex-flow: column wrap;
     position: relative;
-    top: 40vh;
-    left: 30vw;
+    top: 50vh;
+    left: 36vw;
     width: 3vw;
 }
 
@@ -28,4 +28,14 @@
     position: relative;
     bottom: 25vh;
     left: 48.5vw;
+}
+
+.logo {
+    height: 500px;
+    width: 500px;
+    border: 1px solid blue;
+}
+
+.drop-container {
+    border: 1px solid black;
 }

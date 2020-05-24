@@ -10,13 +10,21 @@
 </head>
 
 <body>
+  <div id="input-div" class="input-div">
+<input type="text" placeholder="Total Amount of Change">
+<button>Submit</button>
+  </div>
   <div id="coin-div" class="coin-div">
+    <img src="images/quarter.png" alt="quarter" id="quarter-25" class="coin" draggable="true" ondragstart="drag(event)">
+    <img src="images/dime.png" alt="dime" id="dime-10" class="coin" draggable="true" ondragstart="drag(event)">
     <img src="images/nickel.png" alt="nickel" id="nickel-5" class="coin" draggable="true" ondragstart="drag(event)">
     <img src="images/penny.png" alt="penny" id="penny-1" class="coin" draggable="true" ondragstart="drag(event)">
   </div>
 
+  <div id="drop-container" class="drop-container">
   <img src="images/kid.jpg" alt="kid" id="kid" class="kid" ondrop="drop(event)" ondragover="allowDrop(event)">
-  <!-- <div class="mouth-div" id="mouth-div"></div> -->
+  <div class="mouth-div" id="mouth-div"></div>
+</div>
 
 
   <script src="script.js"></script>
