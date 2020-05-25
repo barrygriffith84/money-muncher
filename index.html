@@ -6,15 +6,18 @@
   <meta name="viewport content=width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Butterfly+Kids&display=swap" rel="stylesheet"> 
   <title>Money Muncher</title>
 </head>
 
 <body>
+  <header>Money Muncher</header>
   <div id="app-container" class="app-container">
   <div id="input-div" class="input-div">
 <input type="text" id="user-input" placeholder="Total Amount of Change">
 <button id="submit-btn">Submit</button>
   </div>
+  <div id="output-div" class="output-div"></div>
   <div id="coin-div" class="coin-div">
     <img src="images/quarter.png" alt="quarter" id="quarter-25" class="coin" draggable="true" ondragstart="drag(event)">
     <img src="images/dime.png" alt="dime" id="dime-10" class="coin" draggable="true" ondragstart="drag(event)">

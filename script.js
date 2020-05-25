@@ -1,25 +1,21 @@
-/* 
-TODO:
--Position everything with CSS
--Grab the value the user submits in the input and checks it against total value of the money consumed
--Return messages if the user is correct or not
--Add sound effects
--Consider making a logo using a money-related font from Google Fonts
-*/
 
-//520 x 612
+//520 x 612 image size
 let coinCount = 0;
 let moneyTotal = 0;
 let coinValue = 0;
 let coinId = ""
 let userGuess = 0;
+const returnMessages = ["Sorry, that is an incorrect amount", "You did great, but I bet you could eat more change next time!", "You are a master of eating change!", "You are a coin-eating superhero.  They should call you the Human Piggybank!"]
+const gulp = new Audio('sounds/gulp-sound.mp3');
+const cheer = new Audio('sounds/kids-cheer.mp3')
+
+
 //Determines which coin was consumed and reprints that coin to coin-div
 const printCoin = (coinId) => {
 console.log(coinId)
   const coin = coinId.split("-")[0]
   document.querySelector("#coin-div").innerHTML +=
       `<img src="images/${coin}.png" alt="${coin}" id="${coinId}" class="coin" draggable="true" ondragstart="drag(event)">`
-
 }
 
 const allowDrop = (ev) => {
@@ -35,6 +31,7 @@ const drag = (ev) => {
 const drop = (ev) => {
   ev.preventDefault();
   var data = ev.dataTransfer.getData("text");
+  gulp.play();
   document.querySelector(`#${data}`).remove();
   printCoin(coinId);
   coinCount++;
@@ -43,9 +40,24 @@ const drop = (ev) => {
 }
 
 const checkUser = () => {
-  if(userGuess == moneyTotal/100){console.log("You are right")}
-  else{
-    console.log("WRONG")
+  if(userGuess == moneyTotal/100){
+    document.querySelector("#output-div").innerHTML = correctMessage()
+    cheer.play();
+    coinCount = 0;
+    moneyTotal = 0;
+  } else{
+    document.querySelector("#output-div").innerHTML = returnMessages[0]
+  }
+}
+
+
+const correctMessage = () => {
+  if(coinCount <= 5){
+    return returnMessages[1]
+  } else if(coinCount > 5 && coinCount < 12){
+    return returnMessages[2]
+  } else if(coinCount >= 12){
+    return returnMessages[3]
   }
 }
 

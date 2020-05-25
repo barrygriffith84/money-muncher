@@ -1,3 +1,10 @@
+header {
+    font-family: 'Butterfly Kids', cursive;
+    font-size: 8em;
+    text-align: center;
+    color: green;
+}
+
 .app-container {
     /* border: 1px solid brown; */
     position: relative;
@@ -8,7 +15,7 @@
     /* border: 1px solid green; */
     position: absolute;
     left: 39.5vw;
-    top: 7vh;
+    top: 2vh;
 }
 
 button {
@@ -21,13 +28,26 @@ input {
     height: 2em;
 }
 
+.output-div {
+    /* border: 1px solid pink; */
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    width: 1200px;
+    height: 45px;
+    position: absolute;
+    left: 18vw;
+    top: 6vh;
+    z-index: 3;
+}
+
 .drop-container {
     /* border: 1px solid black; */
     width: 520px;
     height: 612px;
     position: absolute;
     left: 35vw;
-    bottom: 20vh;
+    bottom: 19vh;
 }
 
 .kid {
