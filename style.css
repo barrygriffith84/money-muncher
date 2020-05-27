@@ -6,13 +6,13 @@ header {
 }
 
 .app-container {
-    border: 1px solid brown;
+    /* border: 1px solid brown; */
     position: relative;
     height: 100%;
 }
 
 .input-div {
-    border: 1px solid green;
+    /* border: 1px solid green; */
     position: absolute;
     left: 39.5vw;
     top: 2vh;
@@ -42,7 +42,7 @@ input {
 }
 
 .drop-container {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 520px;
     height: 612px;
     position: absolute;
@@ -62,7 +62,7 @@ input {
 .mouth-div {
     height: 150px;
     width: 140px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     position: absolute;
     top: 250px;
     left: 160px;
@@ -70,7 +70,7 @@ input {
 }
 
 .coin-div {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     flex-flow: column wrap;
     width: 65px;
